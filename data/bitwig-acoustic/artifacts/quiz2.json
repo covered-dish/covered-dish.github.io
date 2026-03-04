@@ -1,0 +1,265 @@
+{
+  "title": "Music Production Quiz",
+  "questions": [
+    {
+      "question": "In Bitwig Studio, what is the specific keyboard shortcut used to add a new audio track?",
+      "answerOptions": [
+        {
+          "text": "$Command$ + $T$",
+          "isCorrect": false,
+          "rationale": "This shortcut is commonly used to create an instrument track rather than an audio track."
+        },
+        {
+          "text": "$Command$ + $Shift$ + $T$",
+          "isCorrect": true,
+          "rationale": "Holding the shift key in conjunction with the standard track command specifies the creation of an audio-based track."
+        },
+        {
+          "text": "$Command$ + $R$",
+          "isCorrect": false,
+          "rationale": "This command is typically reserved for renaming tracks or clips within the arrangement."
+        },
+        {
+          "text": "$Option$ + $A$",
+          "isCorrect": false,
+          "rationale": "This is not a standard Bitwig shortcut for track creation and likely performs no action or a different menu function."
+        }
+      ],
+      "hint": "Think about the modifier key needed to differentiate between an instrument and an audio track."
+    },
+    {
+      "question": "When mixing acoustic guitar, which frequency range is often cut to remove what Joe Gilder refers to as a 'plasticky' or cheap sound?",
+      "answerOptions": [
+        {
+          "text": "$150\\text{ Hz}$",
+          "isCorrect": false,
+          "rationale": "This frequency is generally associated with the 'thump' or percussive low-end energy of a down-strum."
+        },
+        {
+          "text": "$800\\text{ Hz}$",
+          "isCorrect": true,
+          "rationale": "Mid-range build-up in this area can make a guitar sound boxy or artificial, often masking higher-end clarity."
+        },
+        {
+          "text": "$50\\text{ Hz}$",
+          "isCorrect": false,
+          "rationale": "This area is typically targeted with a high-pass filter to remove subsonic rumble rather than tonal 'plasticity'."
+        },
+        {
+          "text": "$8\\text{ kHz}$",
+          "isCorrect": false,
+          "rationale": "High frequencies in this range are usually boosted to add 'air' and string sizzle rather than being cut."
+        }
+      ],
+      "hint": "Consider the mid-range area where harmonic build-up frequently occurs."
+    },
+    {
+      "question": "According to the 'Produce Like A Pro' source, why might a transient shaper like Waves TransX be preferred over a standard transient designer for acoustic guitar?",
+      "answerOptions": [
+        {
+          "text": "It adds more harmonic saturation to the signal.",
+          "isCorrect": false,
+          "rationale": "Transient processors are generally designed for envelope manipulation rather than adding saturation or distortion."
+        },
+        {
+          "text": "It operates with a faster response to tame 'clickiness'.",
+          "isCorrect": true,
+          "rationale": "The TransX is noted for its ability to catch extremely fast percussive spikes that slower designers might miss."
+        },
+        {
+          "text": "It automatically applies a high-pass filter to the sidechain.",
+          "isCorrect": false,
+          "rationale": "While some processors have filters, the primary advantage cited is the speed of the transient detection."
+        },
+        {
+          "text": "It uses look-ahead technology to preserve the transients.",
+          "isCorrect": false,
+          "rationale": "The goal in this context is taming the aggressive 'spikiness' rather than purely preserving it."
+        }
+      ],
+      "hint": "Focus on the speed and precision required for percussive string attacks."
+    },
+    {
+      "question": "In the context of folk music mastering, how does the dynamic range compare to other genres?",
+      "answerOptions": [
+        {
+          "text": "More dynamic than Jazz but less dynamic than Pop.",
+          "isCorrect": false,
+          "rationale": "Jazz is typically one of the most dynamic genres, while Pop is often heavily compressed for loudness."
+        },
+        {
+          "text": "Less dynamic than Classical but more dynamic than Pop.",
+          "isCorrect": true,
+          "rationale": "Folk requires more consistency than Classical for intelligibility, yet must preserve more natural range than mainstream Pop."
+        },
+        {
+          "text": "The most dynamic genre, exceeding even Classical music.",
+          "isCorrect": false,
+          "rationale": "Classical music generally has the highest requirement for pure, uncompressed dynamic range."
+        },
+        {
+          "text": "Equal in dynamics to Hip-Hop and modern Pop.",
+          "isCorrect": false,
+          "rationale": "Folk emphasizes natural instrumentation, which requires avoiding the heavy limiting found in modern Hip-Hop."
+        }
+      ],
+      "hint": "Think of Folk as a middle ground between highly polished mainstream music and purely acoustic art music."
+    },
+    {
+      "question": "Why is it difficult to achieve a realistic sounding guitar chord using a standard piano triad voicing in MIDI?",
+      "answerOptions": [
+        {
+          "text": "Piano chords use different sample rates than guitar samples.",
+          "isCorrect": false,
+          "rationale": "Sample rate is a technical setting and does not affect the musical voicing or arrangement of notes."
+        },
+        {
+          "text": "Guitar strings are physically spaced such that notes are often five semitones apart.",
+          "isCorrect": true,
+          "rationale": "The physical layout of the fretboard dictates specific note intervals that differ from a keyboard's linear layout."
+        },
+        {
+          "text": "MIDI cannot transmit the frequency data required for guitar chords.",
+          "isCorrect": false,
+          "rationale": "MIDI transmits note data; the difficulty lies in the arrangement of those notes, not the technology itself."
+        },
+        {
+          "text": "Guitar chords require more MIDI velocity layers than piano chords.",
+          "isCorrect": false,
+          "rationale": "Velocity layers affect dynamics, but the core issue of realism in chords is the selection of the notes (voicing)."
+        }
+      ],
+      "hint": "Consider the physical limitations of a guitar fretboard versus a piano keyboard."
+    },
+    {
+      "question": "Which Bitwig Studio device is essential for Vaan's technique of using a single MIDI 'King' track to trigger multiple instruments on different tracks?",
+      "answerOptions": [
+        {
+          "text": "$Note$ $Receiver$",
+          "isCorrect": true,
+          "rationale": "This device allows one track to listen to and grab MIDI data from another source track in real-time."
+        },
+        {
+          "text": "$Diatonic$ $Transposer$",
+          "isCorrect": false,
+          "rationale": "While used in the chain, this device fixes notes to a scale rather than routing the MIDI between tracks."
+        },
+        {
+          "text": "$Arpeggiator$",
+          "isCorrect": false,
+          "rationale": "This device rhythmically breaks chords into single notes but doesn't handle the routing between different tracks."
+        },
+        {
+          "text": "$MIDI$ $Latch$",
+          "isCorrect": false,
+          "rationale": "This device holds notes after a key is released and is unrelated to the multi-track routing setup described."
+        }
+      ],
+      "hint": "Look for a device whose name implies getting data from an external source."
+    },
+    {
+      "question": "What level of Total Harmonic Distortion ($THD$) is suggested as beneficial for adding presence and fullness to a folk master?",
+      "answerOptions": [
+        {
+          "text": "$0.1\\% - 0.5\\%$",
+          "isCorrect": false,
+          "rationale": "This level is extremely clean and may not provide the desired audible 'fullness' for a folk master."
+        },
+        {
+          "text": "$1\\% - 2\\%$",
+          "isCorrect": true,
+          "rationale": "This range introduces enough complexity to fill frequency gaps without making the distortion overtly obvious or aggressive."
+        },
+        {
+          "text": "$5\\% - 10\\%$",
+          "isCorrect": false,
+          "rationale": "Levels this high would likely result in audible clipping or grit, which contradicts the 'natural' goal of folk music."
+        },
+        {
+          "text": "$15\\% - 20\\%$",
+          "isCorrect": false,
+          "rationale": "This range is characteristic of heavy saturation or distortion effects, not subtle mastering enhancement."
+        }
+      ],
+      "hint": "Look for a percentage that represents a subtle but complex saturation."
+    },
+    {
+      "question": "When building a custom multiband compressor in Bitwig, why might the 'Dynamics' device be chosen over the standard 'Compressor' device?",
+      "answerOptions": [
+        {
+          "text": "The Compressor device lacks a ratio control.",
+          "isCorrect": false,
+          "rationale": "Both devices feature ratio controls; this is a standard feature of any compression unit."
+        },
+        {
+          "text": "The Dynamics device allows for faster attack times down to $0.1\\text{ ms}$.",
+          "isCorrect": true,
+          "rationale": "The specialized Dynamics device offers significantly quicker response times, which are often necessary for managing fast transients in specific bands."
+        },
+        {
+          "text": "The standard Compressor does not support sidechain input.",
+          "isCorrect": false,
+          "rationale": "Bitwig's standard compressor does support sidechaining via its internal routing or modulators."
+        },
+        {
+          "text": "The Dynamics device includes an integrated $5$-band $EQ$.",
+          "isCorrect": false,
+          "rationale": "The Dynamics device focuses on envelope processing; EQ would be a separate device in the chain."
+        }
+      ],
+      "hint": "Examine the technical specifications regarding response speed for each device."
+    },
+    {
+      "question": "What is a recommended starting point for the integrated loudness ($LUFS$) when mastering folk music for streaming services?",
+      "answerOptions": [
+        {
+          "text": "$-14\\text{ LUFS}$",
+          "isCorrect": true,
+          "rationale": "This level is a widely accepted target for most streaming platforms to maintain dynamic integrity."
+        },
+        {
+          "text": "$-10\\text{ LUFS}$",
+          "isCorrect": false,
+          "rationale": "While acceptable for some commercial folk, it may be too loud and compressed for a simple vocal and guitar arrangement."
+        },
+        {
+          "text": "$-6\\text{ LUFS}$",
+          "isCorrect": false,
+          "rationale": "This is a very loud level typically reserved for heavy EDM or aggressive Pop, which would crush a folk recording's dynamics."
+        },
+        {
+          "text": "$-23\\text{ LUFS}$",
+          "isCorrect": false,
+          "rationale": "This is a broadcast standard level and is generally much quieter than required for music streaming services."
+        }
+      ],
+      "hint": "Consider the industry standard target for normalization on modern platforms."
+    },
+    {
+      "question": "In Alckemy's sound design tutorial, which feature of the Bitwig arpeggiator is highlighted for creating a more natural, 'human' groove?",
+      "answerOptions": [
+        {
+          "text": "$Note$ $Repeat$",
+          "isCorrect": false,
+          "rationale": "Note repeat simply retriggers the sound and does not inherently add human-like timing variations."
+        },
+        {
+          "text": "$Step$ $Probability$",
+          "isCorrect": false,
+          "rationale": "Probability affects the chance of a note playing, which adds randomness rather than timing swing."
+        },
+        {
+          "text": "$Humanize$",
+          "isCorrect": true,
+          "rationale": "This feature shifts notes slightly early or late to mimic the imperfect timing of a live performer."
+        },
+        {
+          "text": "$Retrigger$ $Rate$",
+          "isCorrect": false,
+          "rationale": "This setting determines how quickly the arpeggio cycles and is not related to human-like swing."
+        }
+      ],
+      "hint": "Look for a setting specifically named to describe non-mechanical performance."
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "name": "Guitar Enhancement Techniques",
+  "children": [
+    {
+      "name": "Chord Tricks",
+      "children": [
+        {
+          "name": "Power Chord Variations",
+          "children": [
+            {
+              "name": "Add Major Third"
+            },
+            {
+              "name": "Add Minor Third"
+            },
+            {
+              "name": "Inversions"
+            }
+          ]
+        },
+        {
+          "name": "Fattening Open Chords",
+          "children": [
+            {
+              "name": "Use Low E String"
+            },
+            {
+              "name": "Add 5th as Base Note"
+            },
+            {
+              "name": "C major 7 over G"
+            }
+          ]
+        },
+        {
+          "name": "Open String Ring",
+          "children": [
+            {
+              "name": "Keep Top Two Strings Open"
+            },
+            {
+              "name": "Key of E and C Examples"
+            }
+          ]
+        },
+        {
+          "name": "G Shape Trick",
+          "children": [
+            {
+              "name": "Barred G Shape Transitions"
+            },
+            {
+              "name": "Fluent Chord Shifting"
+            }
+          ]
+        },
+        {
+          "name": "Sliding Open Shapes",
+          "children": [
+            {
+              "name": "Slide D Shape"
+            },
+            {
+              "name": "Slide A Minor Shape"
+            },
+            {
+              "name": "Slide E Shape"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bluegrass & Country Style",
+      "children": [
+        {
+          "name": "Rhythm Patterns",
+          "children": [
+            {
+              "name": "The G Run"
+            },
+            {
+              "name": "The Chuck (Offbeat Accent)"
+            },
+            {
+              "name": "Alternating Bass (Root-5th)"
+            },
+            {
+              "name": "Boom-Chick Pattern"
+            }
+          ]
+        },
+        {
+          "name": "Soloing & Fills",
+          "children": [
+            {
+              "name": "Riffing off the Octave"
+            },
+            {
+              "name": "Passing and Lead-in Runs"
+            },
+            {
+              "name": "Scale Folding Exercises"
+            }
+          ]
+        },
+        {
+          "name": "Chicken Picking",
+          "children": [
+            {
+              "name": "Hybrid Picking Technique"
+            },
+            {
+              "name": "Muted Thuds and Pops"
+            },
+            {
+              "name": "Banjo Rolls"
+            },
+            {
+              "name": "Double Stop Bends"
+            }
+          ]
+        },
+        {
+          "name": "Travis Picking",
+          "children": [
+            {
+              "name": "Alternating Thumb Bass"
+            },
+            {
+              "name": "Syncopated Melody Fingers"
+            },
+            {
+              "name": "Palm Muting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pentatonic & Lead Fills",
+      "children": [
+        {
+          "name": "Pentatonic Fills",
+          "children": [
+            {
+              "name": "Root on String 6 (E Shape)"
+            },
+            {
+              "name": "Root on String 5 (A Shape)"
+            },
+            {
+              "name": "Second Octave Slides"
+            },
+            {
+              "name": "Triad Double Stops"
+            }
+          ]
+        },
+        {
+          "name": "Roadmap Method",
+          "children": [
+            {
+              "name": "Diatonic Chord Roadmaps"
+            },
+            {
+              "name": "Horizontal Scale Movement"
+            },
+            {
+              "name": "Vertical Minor Pentatonic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chord Embellishments",
+      "children": [
+        {
+          "name": "Finger Fluency",
+          "children": [
+            {
+              "name": "Middle Finger On/Off"
+            },
+            {
+              "name": "Index Finger Riffs"
+            },
+            {
+              "name": "Pinky G-note Hack"
+            }
+          ]
+        },
+        {
+          "name": "Suspended Chords",
+          "children": [
+            {
+              "name": "Sus2 (1-2-5)"
+            },
+            {
+              "name": "Sus4 (1-4-5)"
+            },
+            {
+              "name": "Unresolved to Resolved"
+            }
+          ]
+        },
+        {
+          "name": "CAGED Embellishments",
+          "children": [
+            {
+              "name": "Harmonized Thirds"
+            },
+            {
+              "name": "Box Patterns off Shapes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blues Concepts",
+      "children": [
+        {
+          "name": "2-Note Blues Hack",
+          "children": [
+            {
+              "name": "Flat 7 and Major 3rd"
+            },
+            {
+              "name": "Fretboard Conveyor Belt"
+            },
+            {
+              "name": "1-4-5 Shuffle Shapes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

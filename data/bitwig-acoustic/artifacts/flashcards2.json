@@ -1,0 +1,305 @@
+{
+  "title": "Production Flashcards",
+  "cards": [
+    {
+      "front": "In Bitwig Studio, which device is used to route MIDI data from one track into another for processing?",
+      "back": "Note Receiver"
+    },
+    {
+      "front": "What is the primary function of the Bitwig \"Diatonic Transposer\" device?",
+      "back": "It constrains incoming MIDI notes to a specific musical scale."
+    },
+    {
+      "front": "Which Bitwig Arpeggiator feature introduces natural-sounding swing by slightly shifting note timing?",
+      "back": "Humanize"
+    },
+    {
+      "front": "Why is the \"Dynamics\" device often preferred over the standard \"Compressor\" in Bitwig for multiband tasks?",
+      "back": "It offers faster attack ($0.1$ ms) and release ($10$ ms) times."
+    },
+    {
+      "front": "In Bitwig Studio, what type of track allows for the simultaneous manipulation of both MIDI and audio data?",
+      "back": "Hybrid Track"
+    },
+    {
+      "front": "According to Marc Daniel Nelson, why is over-compressing acoustic guitar in digital mixing problematic?",
+      "back": "It creates artifacts and makes the sound feel flat and \"pumped\" rather than exciting."
+    },
+    {
+      "front": "What tool does Marc Daniel Nelson use specifically to tame the \"harsh clickiness\" of acoustic guitar transients?",
+      "back": "Waves TransX"
+    },
+    {
+      "front": "What is the common microphone placement for a balanced acoustic guitar recording as suggested in the Bitwig Lab guide?",
+      "back": "Pointing toward the 12th fret at a distance of $12$ to $15$ cm."
+    },
+    {
+      "front": "According to Joe Gilder, what is the purpose of applying a high-pass filter at $40$ to $50$ Hz on acoustic guitar?",
+      "back": "To remove low-frequency rumble that could trigger compressors or overwhelm subwoofers."
+    },
+    {
+      "front": "At what frequency does the percussive \"thump\" of a down-strum typically occur on an acoustic guitar?",
+      "back": "Approximately $150$ Hz."
+    },
+    {
+      "front": "What tonal quality is addressed by cutting frequencies around $800$ Hz in an acoustic guitar mix?",
+      "back": "A cheap or \"plasticky\" mid-range sound."
+    },
+    {
+      "front": "According to Joe Gilder, where should a high shelf be boosted to add \"air\" or sizzle to an acoustic guitar?",
+      "back": "$8$ kHz and above."
+    },
+    {
+      "front": "Why does Trev Barnes recommend using a thinner pick for recording soft, indie-folk acoustic parts?",
+      "back": "It glides through strings easier, resulting in better dynamic control and a sweeter tone."
+    },
+    {
+      "front": "What is the benefit of a \"Rubber Bridge\" on an acoustic guitar in folk production?",
+      "back": "It provides a dampened, Americana \"gnarly\" sound with less sustain."
+    },
+    {
+      "front": "How can a producer achieve a \"lap steel\" sound using a standard electric guitar and plugins?",
+      "back": "By using heavy compression to increase sustain, removing transients, and using reverb/delay while bending notes."
+    },
+    {
+      "front": "In mastering folk music, how does the desired dynamic range compare to pop music?",
+      "back": "Folk music should be more dynamic and less limited than pop."
+    },
+    {
+      "front": "What is the advantage of using parallel compression during the mastering of folk tracks?",
+      "back": "It preserves the transients of the original signal while thickening the sound."
+    },
+    {
+      "front": "Which compressor type is recommended for a smooth, vintage folk master sound?",
+      "back": "Optical compression with a soft knee setting."
+    },
+    {
+      "front": "For a more aggressive folk master that retains transients, what compressor settings are used?",
+      "back": "A hard knee setting with an increased attack time and decreased release time."
+    },
+    {
+      "front": "What is the recommended Q value ($Q$) for a two-octave bandwidth in mastering EQ?",
+      "back": "$Q = 0.667$"
+    },
+    {
+      "front": "What is the recommended Q value ($Q$) for a one-octave bandwidth in mastering EQ?",
+      "back": "$Q = 1.414$"
+    },
+    {
+      "front": "What is the recommended Q value ($Q$) for a half-octave bandwidth in mastering EQ?",
+      "back": "$Q = 2.871$"
+    },
+    {
+      "front": "What percentage of Total Harmonic Distortion (THD) is generally considered beneficial for folk masters?",
+      "back": "$1\\%$ to $2\\%$."
+    },
+    {
+      "front": "How can mid/side EQ be used to make a folk vocal more prevalent in a master?",
+      "back": "Slightly amplify $2$ kHz on the mid image and attenuate it on the side image."
+    },
+    {
+      "front": "What is a quick way to make a folk master sound both brighter and wider using mid/side EQ?",
+      "back": "Apply a high shelf filter to the side image above $7$ kHz."
+    },
+    {
+      "front": "What is the target integrated loudness for folk music intended for streaming services?",
+      "back": "$-14$ LUFS."
+    },
+    {
+      "front": "Why should a producer avoid tapping their foot while recording acoustic guitar with a microphone?",
+      "back": "It can move the mic stand or cause unwanted rhythmic thuds to be captured."
+    },
+    {
+      "front": "What is the effect of recording an acoustic guitar closer to its sound hole?",
+      "back": "It increases the amount of low-end frequencies and body in the recording."
+    },
+    {
+      "front": "In a one-microphone recording of a singer-songwriter, how does a compressor help the balance?",
+      "back": "It brings up the acoustic guitar volume during gaps in the vocal performance."
+    },
+    {
+      "front": "What frequency is often cut to remove \"honky\" energy from a vocal or acoustic guitar recording?",
+      "back": "$1$ kHz."
+    },
+    {
+      "front": "When recording with two microphones, what must be checked to prevent thin, hollow sounds?",
+      "back": "Phase alignment between the microphones."
+    },
+    {
+      "front": "Why would an upright piano be chosen over a grand piano for a folk song production?",
+      "back": "It provides a \"dusty,\" vintage, and more intimate texture that fits the folk aesthetic."
+    },
+    {
+      "front": "How can a producer simulate a \"live band in a room\" feel when recording instruments individually?",
+      "back": "By using a central room reverb that all instruments (guitar, vocals, etc.) are sent to."
+    },
+    {
+      "front": "What is the primary difference between a piano voicing and a guitar voicing of a chord?",
+      "back": "Guitar strings are spaced further apart (often 5 semitones), requiring wider, non-triadic note intervals."
+    },
+    {
+      "front": "How should MIDI notes be arranged to simulate a realistic guitar strum?",
+      "back": "By creating a \"waterfall\" effect where the notes are slightly offset from lowest to highest."
+    },
+    {
+      "front": "According to Trev Barnes, what is the benefit of taking silence-filled breaks during production?",
+      "back": "It prevents \"flustered\" brain states and allows for better creative decision-making."
+    },
+    {
+      "front": "In country music production, what role do instruments like the fiddle and pedal steel play?",
+      "back": "They provide human-like connection through swells, slides, and emotional response to the lead vocal."
+    },
+    {
+      "front": "What is the purpose of using a \"Note Receiver\" followed by a \"Multi-Note\" in Bitwig?",
+      "back": "To generate multiple notes (chords) from a single incoming MIDI note source."
+    },
+    {
+      "front": "When mixing a vocal with guitar bleed, why is it important to use subtle EQ moves?",
+      "back": "Aggressive EQ on the guitar track can negatively alter the tone of the vocal bleed within that track."
+    },
+    {
+      "front": "What is the \"Humanize\" setting on a Bitwig arpeggiator doing to the velocity of notes?",
+      "back": "It randomizes the velocity levels to prevent a robotic, static feel."
+    },
+    {
+      "front": "According to the \"Make Pop Music\" guide, what is the first step in building a modern country song?",
+      "back": "Starting with an acoustic guitar chord progression."
+    },
+    {
+      "front": "Why is the use of a MIDI controller preferred over clicking in notes for folk piano parts?",
+      "back": "It captures natural velocity variations and human timing that feel more authentic."
+    },
+    {
+      "front": "What is the benefit of recording \"as if mixing was not a thing\"?",
+      "back": "It forces the producer to be purposeful with mic placement and source tone, reducing the need for corrective plugins later."
+    },
+    {
+      "front": "In folk mastering, what is the risk of excessive stereo widening?",
+      "back": "It can weaken the master's impact, presence, and cause phase cancellation."
+    },
+    {
+      "front": "When mastering an album, which track should be processed first to set a reference for loudness?",
+      "back": "The loudest and most complex track with the most instrumentation."
+    },
+    {
+      "front": "What is the purpose of using a \"Blur\" or \"Doubler\" effect on a mono acoustic guitar track?",
+      "back": "To create a wider stereo spread without re-recording a second part."
+    },
+    {
+      "front": "How does 1-2% THD help a master's frequency response?",
+      "back": "It generates harmonics that fill small gaps in the frequency spectrum, making the sound more complex and full."
+    },
+    {
+      "front": "Why is a high-pass filter on non-bass instruments considered \"insurance\" in a mix?",
+      "back": "It prevents low-end energy from triggering master bus compressors and keeps the low end clear for the kick and bass."
+    },
+    {
+      "front": "What does a \"soft knee\" on a compressor indicate regarding the threshold?",
+      "back": "The compression begins gradually as the signal approaches the threshold, rather than abruptly once it crosses it."
+    },
+    {
+      "front": "In Bitwig Studio, what is the \"Remote Controls Editor\" used for in a custom multiband compressor?",
+      "back": "To map internal parameters (like thresholds) to a single page of accessible knobs."
+    },
+    {
+      "front": "When EQing a recording with significant room rumble, what is the standard digital EQ tool used?",
+      "back": "A high-pass filter (also known as a low-cut filter)."
+    },
+    {
+      "front": "According to Joe Gilder, why might one avoid compression on an acoustic guitar entirely?",
+      "back": "To preserve the natural, unadulterated dynamics of the performance."
+    },
+    {
+      "front": "What is the typical tuning adjustment mentioned for a \"gnarly\" folk guitar sound?",
+      "back": "Tuning the guitar down a whole step."
+    },
+    {
+      "front": "How can \"Ghost Notes\" improve MIDI guitar realism?",
+      "back": "They simulate the subtle sounds of up-picking and down-picking that occur between main notes."
+    },
+    {
+      "front": "Which specific instrument is noted for adding a \"heartbeat\" to a folk track?",
+      "back": "Drums played lightly with a focus on room ambience."
+    },
+    {
+      "front": "In mastering, why is matching the perceived loudness of the vocal between tracks important?",
+      "back": "It ensures the album feels balanced and prevents jarring transitions between songs."
+    },
+    {
+      "front": "What does increasing the attack time on a mastering compressor allow to pass through?",
+      "back": "It allows more of the initial transients (sharp peaks) to remain unaffected."
+    },
+    {
+      "front": "What is the result of using a small EQ bandwidth in a mastering context?",
+      "back": "It often sounds unnatural and causes noticeable, surgical changes to the mix's timbre."
+    },
+    {
+      "front": "Why is it recommended to place the guitar cable behind your shoulder during recording?",
+      "back": "To prevent the cable from bumping against the guitar body and creating unwanted noise."
+    },
+    {
+      "front": "In Bitwig, how do you copy a device chain from one track to another while keeping settings?",
+      "back": "By holding the ALT key and dragging the device to the new track."
+    },
+    {
+      "front": "What is the function of the \"Sidechain\" tool in a Bitwig synth patch used for bass?",
+      "back": "To duck the bass volume whenever the kick drum hits, creating space in the low end."
+    },
+    {
+      "front": "In the context of folk mastering, what is a \"minimalistic\" EQ approach?",
+      "back": "Applying small boosts or cuts, typically between $0.5$ dB and $1$ dB."
+    },
+    {
+      "front": "Why does Trev Barnes use a \"Nuke Kit\" in drum production?",
+      "back": "To achieve a heavily distorted, clipping, and aggressive drum sound for alternative rock."
+    },
+    {
+      "front": "What is the benefit of a \"Parallel Mix\" knob on a distortion plugin?",
+      "back": "It allows the user to blend the grit of the distortion with the clarity of the original dry signal."
+    },
+    {
+      "front": "How does a \"multiband effects\" device differ from a standard EQ in Bitwig?",
+      "back": "It allows different types of processing (like distortion or compression) to be applied to specific frequency bands separately."
+    },
+    {
+      "front": "What is the \"Abnormality\" knob on the New Distort plugin used for?",
+      "back": "It makes the delay behave in a funky, unpredictable, or non-traditional manner."
+    },
+    {
+      "front": "Why is it important to \"darken\" MIDI acoustic guitar elements with EQ?",
+      "back": "MIDI libraries are often overly bright and harsh, which can sound artificial compared to a real recording."
+    },
+    {
+      "front": "What is the primary aesthetic goal of \"Indie Folk\" production according to Redlight Blue?",
+      "back": "Creating a \"uniform space\" using reverb so all instruments feel like they are in the same room."
+    },
+    {
+      "front": "In Bitwig, how can a producer create a \"fill\" using MIDI and audio on the same track?",
+      "back": "By bouncing a MIDI section to audio and performing glitch cuts or edits on the same hybrid track."
+    },
+    {
+      "front": "What is the specific frequency range Joe Gilder identifies as \"honky\" energy in acoustic guitar?",
+      "back": "Around $1$ kHz."
+    },
+    {
+      "front": "What is the primary function of \"Saturation\" in a mastering chain?",
+      "back": "To add harmonic complexity and perceived loudness without strictly using a limiter."
+    },
+    {
+      "front": "Why should a producer consider the \"pick noise\" when EQing acoustic guitar?",
+      "back": "Boosting frequencies above $8$ kHz isolates the sound of the pick hitting the strings for added clarity."
+    },
+    {
+      "front": "How does the distance of a microphone from an acoustic guitar affect the \"room\" sound?",
+      "back": "Increasing the distance (e.g., to $1$ foot or more) captures more of the room's natural ambiance and less direct detail."
+    },
+    {
+      "front": "What is the role of the \"Threshold\" in a multiband compressor setup?",
+      "back": "It determines the level at which compression begins to act upon a specific frequency band."
+    },
+    {
+      "front": "According to Trev Barnes, what is the \"less is more\" approach in moody folk production?",
+      "back": "Focusing on a few well-recorded layers (like guitar and cinematic textures) rather than overwhelming the song with production."
+    }
+  ]
+}

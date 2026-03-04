@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covered Dish — Music Production Research Hub</title>
+  <meta name="description"
+    content="Deep research into acoustic folk production, guitar techniques, and creative workflows. Powered by AI-synthesized video analysis.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="images/logo.png" alt="Covered Dish">
+        <span>Covered Dish</span>
+      </a>
+      <div class="nav-links">
+        <a href="#topics">Topics</a>
+        <a href="https://github.com/covered-dish/covered-dish.github.io" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="images/covered_dish_hero.png" alt="Covered Dish" class="hero-logo">
+      <h1>Covered Dish</h1>
+      <p class="hero-tagline">Deep research distilled into immersive, interactive explorations. YouTube videos analyzed
+        by AI, synthesized into essays, quizzes, podcasts, and more.</p>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <section class="container" id="topics">
+    <div class="search-section">
+      <div class="search-box">
+        <div class="search-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </div>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search topics, tags, techniques...">
+      </div>
+    </div>
+
+    <div class="filter-tags" id="filterTags">
+      <button class="filter-tag active" data-filter="all">All Topics</button>
+      <button class="filter-tag" data-filter="music-production">Music Production</button>
+      <button class="filter-tag" data-filter="guitar">Guitar</button>
+      <button class="filter-tag" data-filter="bitwig">Bitwig</button>
+      <button class="filter-tag" data-filter="technique">Technique</button>
+      <button class="filter-tag" data-filter="creative-writing">Creative Writing</button>
+      <button class="filter-tag" data-filter="ai-tools">AI Tools</button>
+    </div>
+
+    <!-- Topic Cards -->
+    <div class="topics-grid" id="topicsGrid">
+
+      <!-- Card 1: Bitwig Acoustic Folk -->
+      <a href="topics/bitwig-acoustic/index.html" class="topic-card" data-tags="music-production,bitwig,guitar"
+        data-search="bitwig acoustic folk country indie rock midi guitar mixing mastering presets instruments plugins">
+        <img src="images/mixing_console_sketch.png" alt="Mixing Console" class="topic-card-image">
+        <div class="topic-card-body">
+          <span class="topic-card-category">Music Production</span>
+          <h3>Acoustic Folk Production in Bitwig</h3>
+          <p>Creating authentic acoustic folk, alt-country, and indie tunes entirely in Bitwig Studio using MIDI,
+            presets, and plugins — from blank project to finished master.</p>
+          <div class="topic-card-meta">
+            <span class="topic-card-tag">Bitwig</span>
+            <span class="topic-card-tag">MIDI Guitar</span>
+            <span class="topic-card-tag">Mixing</span>
+            <span class="topic-card-tag">Mastering</span>
+            <span class="topic-card-tag">16 Sources</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 2: Guitar Technique -->
+      <a href="topics/guitar-technique/index.html" class="topic-card" data-tags="guitar,technique"
+        data-search="acoustic guitar chicken picking travis picking pentatonic flourishes riffs bass runs chords strumming embellishments capo bluegrass country">
+        <img src="images/chicken_picking_sketch.png" alt="Guitar Technique" class="topic-card-image">
+        <div class="topic-card-body">
+          <span class="topic-card-category">Guitar Technique</span>
+          <h3>From Open Chords to Flourishes</h3>
+          <p>Incremental skill building: chicken picking, chord embellishments, pentatonic licks, bass runs, and
+            transitioning fluidly between chords and lead playing.</p>
+          <div class="topic-card-meta">
+            <span class="topic-card-tag">Chicken Picking</span>
+            <span class="topic-card-tag">Pentatonic</span>
+            <span class="topic-card-tag">Bass Runs</span>
+            <span class="topic-card-tag">Flourishes</span>
+            <span class="topic-card-tag">16 Sources</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 3: Vibe Coding Fiction (Coming Soon) -->
+      <div class="topic-card" data-tags="creative-writing,ai-tools"
+        data-search="vibe coding fiction novel writing claude code antigravity workflow research outline draft edit publish meta-fiction"
+        style="opacity: 0.65; cursor: default;">
+        <img src="images/banjo_fiddle_sketch.png" alt="Fiction Writing" class="topic-card-image">
+        <div class="topic-card-body">
+          <span class="topic-card-category" style="color: var(--warm-gray-400);">Coming Soon</span>
+          <h3>Vibe Coding Literary Fiction</h3>
+          <p>Using Claude Code CLI and Google Antigravity to write incredible fiction — multi-stage workflows for
+            novels, chaos injection, human-AI collaboration, and meta-fiction publishing.</p>
+          <div class="topic-card-meta">
+            <span class="topic-card-tag">Claude Opus</span>
+            <span class="topic-card-tag">Antigravity</span>
+            <span class="topic-card-tag">Fiction</span>
+            <span class="topic-card-tag">Workflows</span>
+            <span class="topic-card-tag">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Literary Fiction Reviews (Coming Soon) -->
+      <div class="topic-card" data-tags="creative-writing"
+        data-search="literary fiction reviews critiques interpretations bolano mccarthy knausgaard carson cusk coetzee chiang orwell pessoa johnson everett williams lethem smith mann carrington watkins krastev kagan"
+        style="opacity: 0.65; cursor: default;">
+        <img src="images/banjo_fiddle_sketch.png" alt="Books" class="topic-card-image">
+        <div class="topic-card-body">
+          <span class="topic-card-category" style="color: var(--warm-gray-400);">Coming Soon</span>
+          <h3>Literary Fiction Reviews & Critiques</h3>
+          <p>Deep reviews and interpretations of 20 essential works — Bolaño's 2666, Cormac McCarthy's Suttree,
+            Knausgaard's The Third Realm, Anne Carson, Ted Chiang, Rachel Cusk, and more.</p>
+          <div class="topic-card-meta">
+            <span class="topic-card-tag">Bolaño</span>
+            <span class="topic-card-tag">McCarthy</span>
+            <span class="topic-card-tag">Knausgaard</span>
+            <span class="topic-card-tag">20 Books</span>
+            <span class="topic-card-tag">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="images/logo.png" alt="Covered Dish" class="footer-logo">
+    <p>Built with <a href="https://github.com/covered-dish/covered-dish.github.io">open source</a> love.</p>
+    <p style="margin-top: 0.5rem;">Powered by Claude Opus 4.6 · Google Antigravity · yt-dlp · NotebookLM · Gemini</p>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

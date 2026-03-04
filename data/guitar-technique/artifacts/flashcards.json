@@ -1,0 +1,221 @@
+{
+  "title": "Guitar Flashcards",
+  "cards": [
+    {
+      "front": "In Paul Davids' 'power chord trick,' which note is typically replaced to create a more melodic sound?",
+      "back": "The octave."
+    },
+    {
+      "front": "To turn a C power chord into a melodic major chord, move the octave note from the G-string to which fret on the D-string?",
+      "back": "Fret 2."
+    },
+    {
+      "front": "According to Paul Davids, how can you 'fatten up' an open C or D chord using the low E string?",
+      "back": "By adding the $5^{th}$ of the chord as a bass note on the low E string."
+    },
+    {
+      "front": "When playing an open C major chord, which finger moves to the third fret of the low E string to add a G bass note?",
+      "back": "The ring finger."
+    },
+    {
+      "front": "What 'drone' technique involves keeping the top two strings open while playing chord progressions in keys like E or C?",
+      "back": "The open string hang."
+    },
+    {
+      "front": "The 'G shape trick' uses a specific barre chord voicing to allow for a fluent transition between which two chords?",
+      "back": "D minor and C."
+    },
+    {
+      "front": "When using the G shape for a C major chord, the pinky plays the root on the low E string while the index finger bars which three strings?",
+      "back": "The D, G, and B strings."
+    },
+    {
+      "front": "Which three open chord shapes does Paul Davids suggest sliding up the neck to create 'eerie' or floating sounds?",
+      "back": "D, A minor, and E."
+    },
+    {
+      "front": "In Bluegrass guitar, what is the 'G run'?",
+      "back": "An iconic lick used as an intro, outro, or solo transition that starts and ends on the root note."
+    },
+    {
+      "front": "What is the percussive rhythmic sound in Bluegrass created by a pick downstroke on the offbeat called?",
+      "back": "The chuck."
+    },
+    {
+      "front": "In Bluegrass rhythm playing, 'alternating bass' involves switching between which two notes of a chord?",
+      "back": "The root and the $5^{th}$."
+    },
+    {
+      "front": "How does a Bluegrass player modify a C chord to play alternating bass without moving their fingers?",
+      "back": "By placing the ring finger on the low E string (G) and the little finger on the A string (C)."
+    },
+    {
+      "front": "The Bluegrass technique 'riffing off the octave' involves syncopation and a slide between the same note in _____.",
+      "back": "Different positions on the neck."
+    },
+    {
+      "front": "What is the purpose of 'passing runs' or 'lead-in runs' in Bluegrass?",
+      "back": "To create smooth embellishments when transitioning between chord changes."
+    },
+    {
+      "front": "To create a fill in a $1-2$ progression in G (G to Am), Ry Naylor suggests using which scale from the root on string 6?",
+      "back": "The sliding major pentatonic scale."
+    },
+    {
+      "front": "What is a 'triad double stop' in the context of pentatonic fills?",
+      "back": "Using two fingers to hammer on or pluck two strings simultaneously within a chord shape."
+    },
+    {
+      "front": "When playing pentatonic fills on strings 2 and 3, why is a position shift usually required?",
+      "back": "Because the B-string (string 2) is tuned a major third higher than the G-string, unlike other string pairs."
+    },
+    {
+      "front": "In the key of G, Ry Naylor advises avoiding which note during A minor fills to prevent a 'rub' with the key?",
+      "back": "The C note."
+    },
+    {
+      "front": "What is David Pots' primary trick for adding 'spice' to C, Am, and F chords?",
+      "back": "Lifting the middle finger off and on to create hammer-ons and pull-offs."
+    },
+    {
+      "front": "Which finger can be added to the $3^{rd}$ fret of the high E string to embellish an open C, Am, or F chord?",
+      "back": "The pinky."
+    },
+    {
+      "front": "When playing a G chord with flair, David Pots suggests muting the $5^{th}$ string to avoid a 'dissonant' sound with which note?",
+      "back": "The open B string (if adding a C note with the index finger)."
+    },
+    {
+      "front": "In Chet Atkins' teaching, which numbers are assigned to the fingers of the left hand?",
+      "back": "$1$ (index), $2$ (middle), $3$ (ring), and $4$ (pinky)."
+    },
+    {
+      "front": "What are the two 'roadmaps' Andrew Clarke uses to link chords together?",
+      "back": "One rooted on the low E string and one rooted on the A string."
+    },
+    {
+      "front": "According to Andrew Clarke, which two scale degrees are removed from a major scale to create a pentatonic scale?",
+      "back": "The $4^{th}$ and the $7^{th}$."
+    },
+    {
+      "front": "Why are pentatonic notes considered 'safer' for fills than the full major scale?",
+      "back": "They avoid the $4^{th}$ and $7^{th}$ degrees, which can sound dissonant over certain chords in the key."
+    },
+    {
+      "front": "In a chord roadmap, which chord is the vertical scale shape typically based around?",
+      "back": "The minor $6$ chord."
+    },
+    {
+      "front": "How can you change the key of a horizontal chord roadmap?",
+      "back": "By shifting the entire roadmap shape up or down the fretboard to align with the new root note."
+    },
+    {
+      "front": "To convert a Major Pentatonic scale shape into a Minor Pentatonic scale, how many frets must you shift it up?",
+      "back": "Three frets."
+    },
+    {
+      "front": "The 'Blue Scale' is essentially a Minor Pentatonic scale with the addition of one _____ note per octave.",
+      "back": "Blues."
+    },
+    {
+      "front": "What is 'Chicken Picking'?",
+      "back": "A hybrid picking style that combines a pick with fingers to produce a percussive, clucking sound."
+    },
+    {
+      "front": "In Chicken Picking, what mechanical action produces the 'pop' sound?",
+      "back": "Pulling the string up with a finger so it snaps back against the frets."
+    },
+    {
+      "front": "What is 'Hybrid Picking'?",
+      "back": "The technique of using a pick (held by thumb and index) in combination with the middle and/or ring fingers."
+    },
+    {
+      "front": "In hybrid picking, where is the pick typically 'stashed' if a player wants to switch to using only fingers?",
+      "back": "Between the first and middle fingers."
+    },
+    {
+      "front": "What is the primary benefit of using a thumb pick for Travis picking?",
+      "back": "It leaves the index, middle, and ring fingers free to pluck or 'pop' strings."
+    },
+    {
+      "front": "What is the foundational 'thumb' movement in Travis Picking?",
+      "back": "An alternating 'boom-chuck' bass pattern on the lower strings."
+    },
+    {
+      "front": "In Travis picking, how is the 'illusion' of a bass player created?",
+      "back": "By the thumb alternating between the root and another bass note (often the $5^{th}$)."
+    },
+    {
+      "front": "What is the 'two-note hack' for jamming the blues in any key?",
+      "back": "Using a shape that contains the flat $7$ and the major $3^{rd}$ of the chord."
+    },
+    {
+      "front": "How do you find the 'neighborhood' for the two-note blues hack in a specific key?",
+      "back": "Locate the root note on the low E string; the two-note shape sits directly below it on the D and G strings."
+    },
+    {
+      "front": "Using the two-note blues hack, how do you move from the $1$ chord to the $5$ chord?",
+      "back": "Move the two-note shape up one fret from the $1$ chord position."
+    },
+    {
+      "front": "What is 'scale folding' in guitar warm-ups?",
+      "back": "Playing scale sequences in intervals (like groups of three) where the notes overlap or 'fold' back on each other."
+    },
+    {
+      "front": "In Bluegrass, why is it beneficial to play the G Major scale out of the 'open position'?",
+      "back": "It allows for the use of open strings, which facilitates speed and the traditional Bluegrass tone."
+    },
+    {
+      "front": "According to Active Melody, what is a 'Sus4' chord?",
+      "back": "A chord where the $3^{rd}$ is replaced by the $4^{th}$ degree of the major scale."
+    },
+    {
+      "front": "What is the tonal characteristic of a 'Suspended' (Sus) chord?",
+      "back": "It sounds 'unresolved' and wants to move back to the major chord."
+    },
+    {
+      "front": "In hybrid picking, 'Banjo Rolls' are designed to emulate which instrument's picking style?",
+      "back": "The banjo."
+    },
+    {
+      "front": "What is the standard three-element sequence for a basic Banjo Roll?",
+      "back": "Pick, then middle finger, then ring finger."
+    },
+    {
+      "front": "When practicing Travis picking, why is palm muting often used by the right hand?",
+      "back": "To dampen the bass notes and make the melody notes on the higher strings stand out."
+    },
+    {
+      "front": "In the context of 'Chicken Picking,' what is a 'muted note'?",
+      "back": "A note where the fretting hand rests lightly on the string to produce a 'thud' rather than a pitch."
+    },
+    {
+      "front": "Greg Koch suggests that 'Chicken Picking' involves a muted note immediately _____ an actual note.",
+      "back": "Before or after."
+    },
+    {
+      "front": "Which famous guitarist is associated with a specific rhythmic chicken picking pattern used in 'Mystery Train'?",
+      "back": "Mark Knopfler."
+    },
+    {
+      "front": "According to Steve Harms, what is the 'downside' of using a thumb pick for fast alternate picking?",
+      "back": "The upstroke can catch on the strings unless the index finger is married to the pick."
+    },
+    {
+      "front": "In Bluegrass rhythm, what does it mean to 'walk up' to a chord?",
+      "back": "To play a sequence of scale notes that lead alphabetically to the next root note (e.g., G-A-B to C)."
+    },
+    {
+      "front": "What is a 'harmonized third'?",
+      "back": "Two notes played together that are an interval of a third apart, often used as an embellishment in lieu of a full chord."
+    },
+    {
+      "front": "In the '2-note blues hack,' what happens to the intervals when you shift from the $1$ chord to the $4$ chord?",
+      "back": "The order of the flat $7$ and major $3^{rd}$ is inverted."
+    },
+    {
+      "front": "What is the 'hiccup' Tony Polecastro mentions in an $8^{th}$ note Banjo Roll?",
+      "back": "A rhythmic adjustment at the end of a measure (Pick-Middle-Ring, Pick-Middle-Ring, Pick-Ring) to complete the $4/4$ count."
+    }
+  ]
+}

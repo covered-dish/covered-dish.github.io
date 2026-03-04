@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acoustic Folk Production in Bitwig — Covered Dish</title>
+  <meta name="description" content="Creating authentic acoustic folk, alt-country, and indie tunes in Bitwig Studio using MIDI, presets, and plugins.">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" href="../../images/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../../" class="nav-logo">
+        <img src="../../images/logo.png" alt="Covered Dish">
+        <span>Covered Dish</span>
+      </a>
+      <div class="nav-links">
+        <a href="../../#topics">All Topics</a>
+        <a href="#essay">Essay</a>
+        <a href="#media">Media</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#flashcards">Flashcards</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Topic Hero -->
+  <section class="topic-hero">
+    <div class="container-narrow">
+      <span style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-copper);">Music Production</span>
+      <h1>Acoustic Folk Production in Bitwig</h1>
+      <p class="topic-hero-desc">Creating authentic acoustic folk, alt-country, and indie tunes entirely in Bitwig Studio using MIDI, presets, and plugins — from blank project to finished master.</p>
+    </div>
+  </section>
+
+  <!-- Essay -->
+  <section class="essay-section container-narrow" id="essay">
+    <div class="essay-content">
+      <p><strong>Creating Authentic Acoustic Folk, Alt-Country, and Indie Tunes in Bitwig Studio: A Comprehensive Guide to MIDI-Based Production</strong></p>
+
+<p>The digital age has brought a unique challenge to music producers: how do we create the warm, organic, and inherently imperfect sounds of folk, alt-country, and indie rock entirely inside a digital audio workstation (DAW) using only MIDI and plugins? Acoustic genres thrive on human connection, the slide of fingers across a fretboard, the subtle timing variations of a live band, and the rich harmonic resonance of wooden instruments. Trying to replicate this with preset instruments and rigid MIDI grids often results in a sterile, overproduced, or synthetic sound.</p>
+
+<p>However, with the right techniques, meticulous attention to detail, and the modular powerhouse that is <strong>Bitwig Studio</strong>, you can craft incredibly realistic, soulful acoustic music without ever plugging in a microphone. This comprehensive guide will walk you through the entire process, from setting up your Bitwig project to composing realistic MIDI guitars, designing organic textures, mixing acoustic instruments, and mastering for folk genres.</p>
+
+<h3>1. Building the Foundation: Workflow and Bitwig Device Routing</h3>
+
+<p>Starting from a blank project in Bitwig Studio, your first goal is to establish a workflow that encourages creativity rather than repetitive clicking. Bitwig excels at modular routing, which can be leveraged to quickly build complex, layered acoustic templates.</p>
+
+<p>Instead of writing complex MIDI patterns on every single track, you can utilize a central "guide" MIDI track. By inserting a <strong>Note Receiver</strong> device on auxiliary tracks, you can funnel the MIDI data from your main guide track to various instruments like virtual pianos, background string plucks, or ambient synths.</p>
+
+<p>To keep your folk progressions harmonically locked, you can place a <strong>Diatonic Transposer</strong> in your device chain, ensuring that no matter what you play, the notes stay within your chosen key (e.g., E minor). If you want to add rhythmic motion to background textures without programming them by hand, insert Bitwig’s <strong>Arpeggiator</strong>. A crucial, often overlooked feature of the Bitwig Arpeggiator is the <strong>Humanize</strong> function. For indie and folk music, sterile quantization is the enemy. The Humanize feature gently pushes individual notes slightly late or early, adding an imperfect, natural swing that breathes life into rigid MIDI chords.</p>
+
+<p>Once you have crafted a perfect chain of devices—for instance, a Note Receiver, Diatonic Transposer, Arpeggiator, and an EQ—you can group them into a <strong>Chain Device</strong> and save it as a preset. This allows you to instantly recall your complex routing on future tracks, maintaining a fast and intuitive workflow.</p>
+
+
+<div class="illustration-break">
+  <img src="../../images/acoustic_guitar_sketch.png" alt="Illustration" loading="lazy">
+</div>
+<h3>2. The Art of Realistic MIDI Guitars</h3>
+
+<p>Acoustic guitars are the backbone of folk and alt-country. Programming them via MIDI is notoriously difficult because a piano keyboard and a guitar fretboard operate fundamentally differently. If you approach a MIDI guitar like a pianist, the result will immediately sound fake.</p>
+
+<p><strong>Understanding Guitar Mechanics and Voicings</strong></p>
+<p>To sequence realistic guitars, you must understand how the instrument is played. A standard guitar has six strings, typically spaced about five semitones apart. Therefore, you cannot play a cluster of tight notes (like a C-E-G piano triad) and expect it to sound natural, because those notes would naturally overlap on the same string on a real guitar.</p>
+
+<p>Instead, guitar voicings are spread out. A C major chord on a guitar might be voiced with the C as the root, the G on the next string down, and the E much higher up. When programming, always try to use chord generators or DAW features that allow you to specifically select "guitar voicings" rather than keyboard voicings. Furthermore, a guitarist cannot play a chord where all six strings are struck at the exact same millisecond. To mimic a realistic strum, you must manually stagger your MIDI notes, creating a rapid "waterfall" effect from the lowest string to the highest (for a downstroke), or highest to lowest (for an upstroke).</p>
+
+<p><strong>Humanizing Velocity and Timing</strong></p>
+<p>If all your MIDI notes are locked perfectly to the grid at a maximum velocity of 127, the instrument will sound robotic. A real performance features dynamic variations. Gently vary the velocities of your strummed notes; perhaps the root note is struck harder, while the higher strings ring out softer. Nudge entire chords slightly ahead of or behind the grid to mimic the push and pull of a live player. Incorporate "ghost notes"—faint, percussive up-picks or down-picks at low velocities—between your main chords to add rhythmic bounce and realism.</p>
+
+<p><strong>Plugin Selection and "DI" Processing</strong></p>
+<p>For the sound source, high-quality libraries like Native Instruments' <strong>Session Guitarist</strong> series (Picked Acoustic, Electric Sunburst, Electric Mint) are incredibly powerful. They utilize recorded loops and patterns, allowing you to trigger palm mutes, open strums, and specific rhythms with key switches.</p>
+
+<p>Here is the ultimate secret to making these libraries sound like authentic records: <strong>turn off their built-in effects and amp simulators</strong> to output a raw DI (Direct Input) signal. The built-in effects are often generic. By printing the raw DI, you can route the guitar through dedicated, high-end third-party amp simulators like <strong>Neural DSP</strong> (Tone King Imperial, Cory Wong) or process the acoustic DI with your own careful EQ and saturation. This provides a custom, authentic tone that doesn't sound "baked in." Finally, layer in a faint audio loop of actual guitar fret noise or string squeaks to trick the ear into believing the performance is human.</p>
+
+
+<div class="illustration-break">
+  <img src="../../images/mixing_console_sketch.png" alt="Illustration" loading="lazy">
+</div>
+<h3>3. Composing Folk Progressions and Melodies</h3>
+
+<p>Folk and alt-country music is driven by storytelling, meaning the instrumentation should support the emotion rather than distract from it. When writing progressions, simplicity is key. A classic 4-5-6 progression is one of the easiest ways to evoke an emotional, pretty sound, especially when played higher up on the neck of an acoustic guitar.</p>
+
+<p>To create contrast, let your verses bounce between simple major chords, but when the chorus hits, drop into a minor chord. This immediately adds depth, gravity, and emotional weight to the song, creating the classic "crying in the shower" indie folk vibe.</p>
+
+<p>For melodic instrumentation, an upright piano is highly preferable to a pristine grand piano. An upright inherently possesses a vintage, slightly dusty, and intimate texture that fits perfectly in a virtual "living room" space. When recording your piano or drum MIDI, avoid clicking notes in with a mouse. Play them on a MIDI controller, even if you make mistakes. Playing physically allows you to react to the music dynamically, preserving the authentic human feel necessary for the genre.</p>
+
+
+<div class="illustration-break">
+  <img src="../../images/banjo_fiddle_sketch.png" alt="Illustration" loading="lazy">
+</div>
+<h3>4. Using Sound Design for Organic Textures</h3>
+
+<p>Even if you are working purely in the box, you can use sound design to craft lush, organic atmospheres. Rather than settling for a static synth pad, use Bitwig's robust modulation system to breathe life into basic patches.</p>
+
+<p>If you have a simple choir sample or a synth chord progression that feels stagnant, map a Bitwig <strong>LFO</strong> or multi-stage envelope to a low-pass filter. The gentle opening and closing of the filter will make the chords evolve over time, transforming a boring pad into something ethereal and lustrous. You can also assign Bitwig's <strong>Macros</strong> to parameters like reverb decay, slight pitch detuning, or octave layers. By automating these macros throughout the arrangement, you create a song that constantly shifts and elaborate its textures without needing to write entirely new parts.</p>
+
+<p>For traditional folk instrumentation, look toward specialized libraries. <strong>Spitfire LABS</strong> (and the LABS+ expansion) is fantastic for injecting cinematic, moody textures, organic pads, and unusual percussive elements into your background. To achieve the iconic crying sound of country music, utilize a pedal steel plugin like <strong>Ink Audio's Ink Steel</strong>, taking advantage of pitch wheels to slide between notes. For a melancholic, human touch, libraries like <strong>Indigenous Sounds' Fiddle</strong> add the weeping swells that define the genre.</p>
+
+<p>You can also engineer a "faux lap-steel" using a standard electric guitar VST. Roll off the tone knob to make it warm, play long sustained notes with heavy pitch-bending, and crush it with aggressive compression (like Soundtoys' Devil-Loc) to grant the notes endless, screaming sustain.</p>
+
+<p>When it comes to drums, avoid massive rock kits or electronic samples. You want a kit that sounds like it is being played lightly in a small room. Libraries like <strong>EZDrummer's Singer-Songwriter EZX</strong> or <strong>Addictive Drums 2</strong> provide incredibly authentic, mellow drum sounds. Keep the programming simple: a gentle kick, a side-stick snare, and subtle hi-hats, slowly introducing a ride cymbal for the choruses.</p>
+
+<h3>5. Mixing Techniques for Acoustic Genres</h3>
+
+<p>Mixing acoustic music inside a DAW requires a delicate touch. The goal is to enhance clarity and glue the artificial tracks together without squashing the life out of them.</p>
+
+<p><strong>EQing Acoustic Instruments</strong></p>
+<p>Acoustic guitars occupy a massive portion of the frequency spectrum and can easily muddy a mix. Employ these four essential EQ moves to clean up your MIDI acoustics:</p>
+<ol>
+<li><strong>Cut the Rumble</strong>: Apply a high-pass filter around 40Hz to 50Hz. Acoustic guitars offer nothing musical in this sub-bass region, and removing it frees up headroom and prevents your compressors from overworking.</li>
+<li><strong>Cut the Thump</strong>: There is often a heavy, percussive low-mid build-up around 150Hz that occurs on the down-strum. Find this frequency with a narrow boost, then pull it down to balance the guitar without removing its inherent warmth.</li>
+<li><strong>Cut the Plastic</strong>: Virtual guitars can sometimes sound cheap or "boxy." Scoop out the harsh mid-range frequencies around 800Hz. This acts as a sophisticated "smiley face" EQ, unmasking the deep lows and crisp highs.</li>
+<li><strong>Boost the Air</strong>: To help the guitar cut through a dense indie-folk mix, add a subtle high-shelf boost around 8kHz. This highlights the sound of the pick hitting the strings without muddying the fundamental tones.</li>
+</ol>
+<p><em>Use Bitwig’s native <strong>EQ-5</strong> for these surgical cuts, utilizing its expanded device view to sweep the frequency spectrum easily.</em></p>
+
+<p><strong>Compression, Saturation, and Transients</strong></p>
+<p>Because acoustic instruments are highly percussive, they have aggressive transients (the initial attack of the sound). Over-compressing them will make the track sound flat and lifeless. Instead of a standard heavy compressor, use tape saturation, such as <strong>Softube Tape</strong>, to naturally tame harsh transients while adding a pleasing, warm harmonic glue. For pinpoint control over aggressive clicks, a transient shaper like <strong>Waves TransX</strong> works much faster than standard compression to smooth out the attack.</p>
+
+<p>In Bitwig, you can utilize the <strong>Compressor+</strong> device set to "Saturate" mode to impart an analog, tape-like compression to your acoustic melodies. For supreme dynamic control, you can even build your own Multiband Compressor using Bitwig’s <strong>Multiband FX-3</strong>. This splits the audio into Low, Mid, and High bands. By inserting a <strong>Dynamics</strong> processor into each slot, you can compress the muddy low-mids aggressively while leaving the airy highs largely uncompressed, mapping the thresholds to Bitwig Macros for easy tweaking.</p>
+
+<p><strong>Panning and Reverb</strong></p>
+<p>To maintain a natural, "live in the room" aesthetic, avoid hard panning everything 100% left or right. Instead, pan instruments slightly off-center (e.g., an acoustic guitar 30% left, an electric 30% right). This creates subtle contrast while keeping the mix focused and intimate.</p>
+
+<p>To make completely separate MIDI instruments feel like a cohesive band, send them all to a single auxiliary Reverb track. A high-quality plate reverb (like <strong>Abbey Road Plate</strong>) or a lush room emulation (like <strong>Valhalla Room</strong>) will cast the illusion that the upright piano, acoustic guitar, and drums were all recorded in the exact same physical space.</p>
+
+<h3>6. Mastering for Folk Music</h3>
+
+<p>Mastering folk music is uniquely challenging. It requires a balance: it must be dynamic enough to sound natural and intimate, yet loud enough to compete on modern streaming platforms.</p>
+
+<p><strong>Dynamics and Compression</strong></p>
+<p>A folk master should be more dynamic than pop, but more controlled than classical music. Avoid heavy brickwall limiting. Instead, utilize <strong>parallel compression</strong> to bring up the low-level details of the mix while completely preserving the sharp transients of the original acoustic plucks. When using compression on the master bus, opt for <strong>optical compression with a soft knee</strong>. A slower attack time paired with a faster release will allow the natural snap of the instruments to pass through unaffected, gently clamping down only on the loudest peaks to create a tranquil, smooth sound.</p>
+
+<p><strong>EQ and Harmonic Distortion</strong></p>
+<p>When applying EQ to a folk master, always use broad, musical bandwidths. A Q setting of roughly 0.667 (a two-octave bandwidth) ensures that any boosts or cuts (kept minimal, around 0.5 to 1 dB) sound incredibly natural and do not abruptly shift the song's timbre.</p>
+
+<p>Adding 1% to 2% of Total Harmonic Distortion (THD) via high-quality analog emulation plugins can work wonders. Harmonic generation fills the gaps in the frequency spectrum, creating a master that feels significantly fuller, warmer, and more reminiscent of the genre's heyday. <em>Note: Saturation naturally compresses the signal, so back off your primary compressors if you are driving analog emulations.</em></p>
+
+<p><strong>Stereo Width and Loudness</strong></p>
+<p>To widen the master without causing phase issues, utilize Mid/Side equalization. A fantastic trick to add shimmering width to a folk track is to apply a high-shelf boost above 7kHz specifically to the <strong>Side</strong> image. This accentuates the air and the higher harmonics of the acoustic guitars, spreading them beautifully across the stereo field.</p>
+
+<p>Finally, target your overall loudness carefully. For streaming services, aiming for an integrated loudness of <strong>-14 LUFS</strong> is a perfect starting point that retains the genre's necessary dynamic range. If your track is extremely sparse—perhaps just a single MIDI acoustic guitar and a vocal—do not push it to match the loudness of a fully arranged pop-rock track, as it will sound unnatural and harsh. Balance the perceived loudness of the lead melody across your entire album to ensure a smooth, cohesive listening experience.</p>
+
+<p>By treating your MIDI programming with the mindset of a live musician, utilizing Bitwig's brilliant modular devices for dynamic variation, and applying careful, analog-style mixing and mastering techniques, you can produce deeply authentic, professional acoustic music entirely within your bedroom studio.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Media Section -->
+  <section class="media-section container-narrow" id="media">
+    <h2>Audio Overview</h2>
+    <p style="color: var(--warm-gray-600); margin-bottom: 1.5rem;">AI-generated podcast discussion synthesized from all 16 source videos.</p>
+    <div class="media-card">
+      <audio controls preload="metadata" style="width: 100%; display: block;">
+        <source src="assets/audio.mp4" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="media-card-info">
+        <div class="media-card-title">Pro Techniques for Acoustic Guitar Production</div>
+        <div class="media-card-type">NotebookLM Audio Overview</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Infographic -->
+  <section class="infographic-section container" id="infographic">
+    <h2 style="margin-bottom: 1.5rem;">Production Pipeline Infographic</h2>
+    <img src="assets/infographic.png" alt="Modern Folk-Country Production Pipeline" loading="lazy">
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Interactive Quiz -->
+  <section class="quiz-section container-narrow" id="quiz">
+    <h2>Test Your Knowledge</h2>
+    <p class="quiz-subtitle">Interactive quiz based on all 16 source videos. Click an answer to check.</p>
+    <div id="quizContainer" data-questions='[{"question": "In Bitwig Studio, what is the specific keyboard shortcut used to add a new audio track?", "options": [], "correct_index": 0}, {"question": "When mixing acoustic guitar, which frequency range is often cut to remove what Joe Gilder refers to as a 'plasticky' or cheap sound?", "options": [], "correct_index": 0}, {"question": "According to the 'Produce Like A Pro' source, why might a transient shaper like Waves TransX be preferred over a standard transient designer for acoustic guitar?", "options": [], "correct_index": 0}, {"question": "In the context of folk music mastering, how does the dynamic range compare to other genres?", "options": [], "correct_index": 0}, {"question": "Why is it difficult to achieve a realistic sounding guitar chord using a standard piano triad voicing in MIDI?", "options": [], "correct_index": 0}, {"question": "Which Bitwig Studio device is essential for Vaan's technique of using a single MIDI 'King' track to trigger multiple instruments on different tracks?", "options": [], "correct_index": 0}, {"question": "What level of Total Harmonic Distortion ($THD$) is suggested as beneficial for adding presence and fullness to a folk master?", "options": [], "correct_index": 0}, {"question": "When building a custom multiband compressor in Bitwig, why might the 'Dynamics' device be chosen over the standard 'Compressor' device?", "options": [], "correct_index": 0}, {"question": "What is a recommended starting point for the integrated loudness ($LUFS$) when mastering folk music for streaming services?", "options": [], "correct_index": 0}, {"question": "In Alckemy's sound design tutorial, which feature of the Bitwig arpeggiator is highlighted for creating a more natural, 'human' groove?", "options": [], "correct_index": 0}]'>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Flashcards -->
+  <section class="flashcards-section container" id="flashcards">
+    <h2 style="margin-bottom: 0.5rem;">Flashcards</h2>
+    <p style="color: var(--warm-gray-600); margin-bottom: 2rem;">Click a card to flip and reveal the answer.</p>
+    <div class="flashcards-grid">
+      
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In Bitwig Studio, which device is used to route MIDI data from one track into another for processing?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Note Receiver</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the primary function of the Bitwig &quot;Diatonic Transposer&quot; device?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It constrains incoming MIDI notes to a specific musical scale.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Which Bitwig Arpeggiator feature introduces natural-sounding swing by slightly shifting note timing?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Humanize</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why is the &quot;Dynamics&quot; device often preferred over the standard &quot;Compressor&quot; in Bitwig for multiband tasks?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It offers faster attack ($0.1$ ms) and release ($10$ ms) times.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In Bitwig Studio, what type of track allows for the simultaneous manipulation of both MIDI and audio data?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Hybrid Track</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>According to Marc Daniel Nelson, why is over-compressing acoustic guitar in digital mixing problematic?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It creates artifacts and makes the sound feel flat and &quot;pumped&quot; rather than exciting.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What tool does Marc Daniel Nelson use specifically to tame the &quot;harsh clickiness&quot; of acoustic guitar transients?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Waves TransX</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the common microphone placement for a balanced acoustic guitar recording as suggested in the Bitwig Lab guide?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Pointing toward the 12th fret at a distance of $12$ to $15$ cm.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>According to Joe Gilder, what is the purpose of applying a high-pass filter at $40$ to $50$ Hz on acoustic guitar?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To remove low-frequency rumble that could trigger compressors or overwhelm subwoofers.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>At what frequency does the percussive &quot;thump&quot; of a down-strum typically occur on an acoustic guitar?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Approximately $150$ Hz.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What tonal quality is addressed by cutting frequencies around $800$ Hz in an acoustic guitar mix?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">A cheap or &quot;plasticky&quot; mid-range sound.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>According to Joe Gilder, where should a high shelf be boosted to add &quot;air&quot; or sizzle to an acoustic guitar?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">$8$ kHz and above.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why does Trev Barnes recommend using a thinner pick for recording soft, indie-folk acoustic parts?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It glides through strings easier, resulting in better dynamic control and a sweeter tone.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the benefit of a &quot;Rubber Bridge&quot; on an acoustic guitar in folk production?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It provides a dampened, Americana &quot;gnarly&quot; sound with less sustain.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>How can a producer achieve a &quot;lap steel&quot; sound using a standard electric guitar and plugins?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">By using heavy compression to increase sustain, removing transients, and using reverb/delay while bending notes.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In mastering folk music, how does the desired dynamic range compare to pop music?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Folk music should be more dynamic and less limited than pop.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the advantage of using parallel compression during the mastering of folk tracks?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It preserves the transients of the original signal while thickening the sound.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Which compressor type is recommended for a smooth, vintage folk master sound?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Optical compression with a soft knee setting.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>For a more aggressive folk master that retains transients, what compressor settings are used?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">A hard knee setting with an increased attack time and decreased release time.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the recommended Q value ($Q$) for a two-octave bandwidth in mastering EQ?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">$Q = 0.667$</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the recommended Q value ($Q$) for a one-octave bandwidth in mastering EQ?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">$Q = 1.414$</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the recommended Q value ($Q$) for a half-octave bandwidth in mastering EQ?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">$Q = 2.871$</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What percentage of Total Harmonic Distortion (THD) is generally considered beneficial for folk masters?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">$1\%$ to $2\%$.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>How can mid/side EQ be used to make a folk vocal more prevalent in a master?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Slightly amplify $2$ kHz on the mid image and attenuate it on the side image.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is a quick way to make a folk master sound both brighter and wider using mid/side EQ?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Apply a high shelf filter to the side image above $7$ kHz.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the target integrated loudness for folk music intended for streaming services?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">$-14$ LUFS.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why should a producer avoid tapping their foot while recording acoustic guitar with a microphone?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It can move the mic stand or cause unwanted rhythmic thuds to be captured.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the effect of recording an acoustic guitar closer to its sound hole?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It increases the amount of low-end frequencies and body in the recording.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In a one-microphone recording of a singer-songwriter, how does a compressor help the balance?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It brings up the acoustic guitar volume during gaps in the vocal performance.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What frequency is often cut to remove &quot;honky&quot; energy from a vocal or acoustic guitar recording?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">$1$ kHz.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>When recording with two microphones, what must be checked to prevent thin, hollow sounds?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Phase alignment between the microphones.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why would an upright piano be chosen over a grand piano for a folk song production?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It provides a &quot;dusty,&quot; vintage, and more intimate texture that fits the folk aesthetic.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>How can a producer simulate a &quot;live band in a room&quot; feel when recording instruments individually?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">By using a central room reverb that all instruments (guitar, vocals, etc.) are sent to.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the primary difference between a piano voicing and a guitar voicing of a chord?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Guitar strings are spaced further apart (often 5 semitones), requiring wider, non-triadic note intervals.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>How should MIDI notes be arranged to simulate a realistic guitar strum?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">By creating a &quot;waterfall&quot; effect where the notes are slightly offset from lowest to highest.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>According to Trev Barnes, what is the benefit of taking silence-filled breaks during production?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It prevents &quot;flustered&quot; brain states and allows for better creative decision-making.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In country music production, what role do instruments like the fiddle and pedal steel play?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">They provide human-like connection through swells, slides, and emotional response to the lead vocal.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the purpose of using a &quot;Note Receiver&quot; followed by a &quot;Multi-Note&quot; in Bitwig?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To generate multiple notes (chords) from a single incoming MIDI note source.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>When mixing a vocal with guitar bleed, why is it important to use subtle EQ moves?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Aggressive EQ on the guitar track can negatively alter the tone of the vocal bleed within that track.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the &quot;Humanize&quot; setting on a Bitwig arpeggiator doing to the velocity of notes?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It randomizes the velocity levels to prevent a robotic, static feel.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>According to the &quot;Make Pop Music&quot; guide, what is the first step in building a modern country song?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Starting with an acoustic guitar chord progression.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why is the use of a MIDI controller preferred over clicking in notes for folk piano parts?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It captures natural velocity variations and human timing that feel more authentic.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the benefit of recording &quot;as if mixing was not a thing&quot;?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It forces the producer to be purposeful with mic placement and source tone, reducing the need for corrective plugins later.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In folk mastering, what is the risk of excessive stereo widening?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It can weaken the master&#x27;s impact, presence, and cause phase cancellation.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>When mastering an album, which track should be processed first to set a reference for loudness?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">The loudest and most complex track with the most instrumentation.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the purpose of using a &quot;Blur&quot; or &quot;Doubler&quot; effect on a mono acoustic guitar track?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To create a wider stereo spread without re-recording a second part.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>How does 1-2% THD help a master&#x27;s frequency response?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It generates harmonics that fill small gaps in the frequency spectrum, making the sound more complex and full.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why is a high-pass filter on non-bass instruments considered &quot;insurance&quot; in a mix?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It prevents low-end energy from triggering master bus compressors and keeps the low end clear for the kick and bass.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What does a &quot;soft knee&quot; on a compressor indicate regarding the threshold?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">The compression begins gradually as the signal approaches the threshold, rather than abruptly once it crosses it.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In Bitwig Studio, what is the &quot;Remote Controls Editor&quot; used for in a custom multiband compressor?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To map internal parameters (like thresholds) to a single page of accessible knobs.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>When EQing a recording with significant room rumble, what is the standard digital EQ tool used?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">A high-pass filter (also known as a low-cut filter).</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>According to Joe Gilder, why might one avoid compression on an acoustic guitar entirely?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To preserve the natural, unadulterated dynamics of the performance.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the typical tuning adjustment mentioned for a &quot;gnarly&quot; folk guitar sound?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Tuning the guitar down a whole step.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>How can &quot;Ghost Notes&quot; improve MIDI guitar realism?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">They simulate the subtle sounds of up-picking and down-picking that occur between main notes.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Which specific instrument is noted for adding a &quot;heartbeat&quot; to a folk track?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Drums played lightly with a focus on room ambience.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In mastering, why is matching the perceived loudness of the vocal between tracks important?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It ensures the album feels balanced and prevents jarring transitions between songs.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What does increasing the attack time on a mastering compressor allow to pass through?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It allows more of the initial transients (sharp peaks) to remain unaffected.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the result of using a small EQ bandwidth in a mastering context?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It often sounds unnatural and causes noticeable, surgical changes to the mix&#x27;s timbre.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why is it recommended to place the guitar cable behind your shoulder during recording?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To prevent the cable from bumping against the guitar body and creating unwanted noise.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In Bitwig, how do you copy a device chain from one track to another while keeping settings?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">By holding the ALT key and dragging the device to the new track.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the function of the &quot;Sidechain&quot; tool in a Bitwig synth patch used for bass?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To duck the bass volume whenever the kick drum hits, creating space in the low end.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In the context of folk mastering, what is a &quot;minimalistic&quot; EQ approach?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Applying small boosts or cuts, typically between $0.5$ dB and $1$ dB.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why does Trev Barnes use a &quot;Nuke Kit&quot; in drum production?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To achieve a heavily distorted, clipping, and aggressive drum sound for alternative rock.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the benefit of a &quot;Parallel Mix&quot; knob on a distortion plugin?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It allows the user to blend the grit of the distortion with the clarity of the original dry signal.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>How does a &quot;multiband effects&quot; device differ from a standard EQ in Bitwig?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It allows different types of processing (like distortion or compression) to be applied to specific frequency bands separately.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the &quot;Abnormality&quot; knob on the New Distort plugin used for?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It makes the delay behave in a funky, unpredictable, or non-traditional manner.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why is it important to &quot;darken&quot; MIDI acoustic guitar elements with EQ?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">MIDI libraries are often overly bright and harsh, which can sound artificial compared to a real recording.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the primary aesthetic goal of &quot;Indie Folk&quot; production according to Redlight Blue?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Creating a &quot;uniform space&quot; using reverb so all instruments feel like they are in the same room.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>In Bitwig, how can a producer create a &quot;fill&quot; using MIDI and audio on the same track?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">By bouncing a MIDI section to audio and performing glitch cuts or edits on the same hybrid track.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the specific frequency range Joe Gilder identifies as &quot;honky&quot; energy in acoustic guitar?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Around $1$ kHz.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the primary function of &quot;Saturation&quot; in a mastering chain?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">To add harmonic complexity and perceived loudness without strictly using a limiter.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>Why should a producer consider the &quot;pick noise&quot; when EQing acoustic guitar?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Boosting frequencies above $8$ kHz isolates the sound of the pick hitting the strings for added clarity.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>How does the distance of a microphone from an acoustic guitar affect the &quot;room&quot; sound?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Increasing the distance (e.g., to $1$ foot or more) captures more of the room&#x27;s natural ambiance and less direct detail.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>What is the role of the &quot;Threshold&quot; in a multiband compressor setup?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">It determines the level at which compression begins to act upon a specific frequency band.</div>
+        </div>
+      </div>
+
+      <div class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <div>According to Trev Barnes, what is the &quot;less is more&quot; approach in moody folk production?</div>
+            <div class="flashcard-hint">Click to reveal answer</div>
+          </div>
+          <div class="flashcard-back">Focusing on a few well-recorded layers (like guitar and cinematic textures) rather than overwhelming the song with production.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="../../images/logo.png" alt="Covered Dish" class="footer-logo">
+    <p><a href="../../">← Back to all topics</a></p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem;">Synthesized from 16 YouTube videos · Powered by NotebookLM + Claude Opus 4.6</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="../../js/app.js"></script>
+</body>
+</html>
