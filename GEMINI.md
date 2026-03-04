@@ -26,3 +26,15 @@ The agent must execute tasks methodically:
 - **Self-Healing Repair Loops:** If the NotebookLM MCP server returns an error or a generation is pending, wait and poll the status instead of failing.
 - **Cost/Context Efficiency:** Rely on concise prompts and utilize targeted MCP tool calls to prevent context window rot.
 
+## All phases: git workflow
+- Use background workers for implementation
+- Use git worktrees for workers
+- Use feature branches
+- Create issues using the gh cli
+- Each worker works on a single GitHub issue, creates a feature branch, compeletes work, verifies with automated checks and tests, create pull request with gh cli
+- The Google Code Assist GitHub app will post code review comments on the pull request, you must wait for these and fix all issues using fresh background workers
+- Do not merge the pull request until all checks pass and the Google Code Assist app gives the green light
+- Resolve conflicts and merge
+- After merge watch the github actions for CI/CD on the main branch make sure it is green
+- Make sure the GitHub pages site deploys successfully
+- Verify the changes in the browser
