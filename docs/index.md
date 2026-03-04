@@ -1,1 +1,1 @@
-Covered Dish
+![logo](images/logo.png)
