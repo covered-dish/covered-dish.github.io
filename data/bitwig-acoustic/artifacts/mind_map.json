@@ -1,0 +1,173 @@
+{
+  "name": "Guitar Recording and Mixing Guide",
+  "children": [
+    {
+      "name": "Recording Techniques",
+      "children": [
+        {
+          "name": "Microphone Placement",
+          "children": [
+            {
+              "name": "12th Fret (12-15cm away)"
+            },
+            {
+              "name": "Pointing at Bridge"
+            },
+            {
+              "name": "XY Pattern at Sound Hole"
+            },
+            {
+              "name": "Distance for Room Ambience"
+            }
+          ]
+        },
+        {
+          "name": "Performance Tips",
+          "children": [
+            {
+              "name": "Double Tracking (L/R Panning)"
+            },
+            {
+              "name": "Thin Picks for Dynamics"
+            },
+            {
+              "name": "Avoid Foot Tapping Noise"
+            },
+            {
+              "name": "Tuning Precision"
+            }
+          ]
+        },
+        {
+          "name": "Modern Country & Folk Styles",
+          "children": [
+            {
+              "name": "Acoustic Main Motif"
+            },
+            {
+              "name": "Electric Lap Steel Swells"
+            },
+            {
+              "name": "Banjo & Fiddle Layers"
+            },
+            {
+              "name": "Upright Piano Texture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Processing & Mixing",
+      "children": [
+        {
+          "name": "Equalization (EQ)",
+          "children": [
+            {
+              "name": "High Pass (Rumble 40-50Hz)"
+            },
+            {
+              "name": "Cut Thump (150-250Hz)"
+            },
+            {
+              "name": "Cut Plastic/Honk (500-1kHz)"
+            },
+            {
+              "name": "Boost Air (8kHz+)"
+            }
+          ]
+        },
+        {
+          "name": "Compression",
+          "children": [
+            {
+              "name": "Optical for Smoothness"
+            },
+            {
+              "name": "Multiband for Frequency Control"
+            },
+            {
+              "name": "Parallel to Preserve Transients"
+            },
+            {
+              "name": "Tape Saturation for Glue"
+            }
+          ]
+        },
+        {
+          "name": "Spatial Effects",
+          "children": [
+            {
+              "name": "Plate Reverb"
+            },
+            {
+              "name": "Ping-Pong Delay"
+            },
+            {
+              "name": "Stereo Width Widening"
+            },
+            {
+              "name": "Room IR for Depth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MIDI & Sound Design",
+      "children": [
+        {
+          "name": "Realism Strategies",
+          "children": [
+            {
+              "name": "Humanize Velocity"
+            },
+            {
+              "name": "Off-Grid Timing Shifts"
+            },
+            {
+              "name": "Strum Waterfall Effect"
+            },
+            {
+              "name": "Guitar-Specific Voicings"
+            }
+          ]
+        },
+        {
+          "name": "Bitwig Specific Tools",
+          "children": [
+            {
+              "name": "Note Receiver"
+            },
+            {
+              "name": "Diatonic Transposer"
+            },
+            {
+              "name": "Chain Device Containers"
+            },
+            {
+              "name": "Arpeggiator Swing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mastering Folk Music",
+      "children": [
+        {
+          "name": "Target -14 LUFS"
+        },
+        {
+          "name": "Natural Bandwidths (Q settings)"
+        },
+        {
+          "name": "Mid/Side Processing"
+        },
+        {
+          "name": "Analog Saturation (1-2% THD)"
+        }
+      ]
+    }
+  ]
+}
