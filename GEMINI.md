@@ -89,3 +89,4 @@ The agent must execute tasks methodically:
 2. **Acoustic Guitar Technique** — LIVE (16 videos, full artifacts)
 3. **Vibe Coding Literary Fiction** — QUEUED (Claude Code + Antigravity fiction workflows)
 4. **Literary Fiction Reviews** — QUEUED (20 books: Bolaño, McCarthy, Knausgaard, Carson, etc.)
+5. **Contemporary Philosophy** — QUEUED (Jeffrey Kaplan, Philosophize This!, Žižek, postmodernism, contemporary greats)
